@@ -1,0 +1,75 @@
+{
+  "name": "@010tech/gatsbyjs-boilerplate",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "1.0.2",
+  "repository": "git@github.com:010tech/gatsbyjs-boilerplate.git",
+  "author": "Gary Lai <garylai1990@gmail.com>",
+  "dependencies": {
+    "dotenv": "8.6.0",
+    "gatsby": "3.5.1",
+    "gatsby-image": "3.5.0",
+    "gatsby-plugin-config": "1.0.7",
+    "gatsby-plugin-manifest": "3.5.0",
+    "gatsby-plugin-next-seo": "1.7.0",
+    "gatsby-plugin-offline": "4.5.1",
+    "gatsby-plugin-postcss": "4.5.0",
+    "gatsby-plugin-react-helmet": "4.5.0",
+    "gatsby-plugin-sharp": "3.5.0",
+    "gatsby-plugin-sitemap": "4.1.0",
+    "gatsby-source-filesystem": "3.5.0",
+    "gatsby-transformer-sharp": "3.5.0",
+    "postcss": "8.3.0",
+    "prop-types": "15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-helmet-async": "1.0.9"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "babel-eslint": "10.1.0",
+    "commitizen": "4.2.4",
+    "conventional-github-releaser": "3.1.5",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.26.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.23.2",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.23.2",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "gatsby-plugin-eslint": "3.0.0",
+    "husky": "6.0.0",
+    "prettier": "2.3.0",
+    "standard-version": "9.3.0",
+    "tailwindcss": "2.1.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint": "eslint --ext .jsx,.js ./src/",
+    "release": "standard-version -s --no-verify",
+    "github-release": "conventional-github-releaser -p angular -r 0"
+  },
+  "bugs": {
+    "url": "https://github.com/010tech/gatsbyjs-boilerplate/issues"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
